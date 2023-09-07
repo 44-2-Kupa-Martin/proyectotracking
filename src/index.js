@@ -4,12 +4,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import MyRouter from './MyRouter';
+import CargaProyecto from './components/CargaProyecto';
 
+const propuestaDePrueba = {
+    nombrePropuesta: "Propuesta 1",
+    descripcionNecesidadCliente: "jsdjfñlñashdgj"
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <MyRouter />
+        <CargaProyecto propuesta={propuestaDePrueba} />
     </React.StrictMode>
 );
 
